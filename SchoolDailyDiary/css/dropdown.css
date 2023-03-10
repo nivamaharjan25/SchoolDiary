@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0;
+  /* -webkit-box-sizing: border-box;
+      box-sizing: border-box; */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  list-style: none;
+  transition: none;
+  /* -webkit-transition: all .2s linear; */
+  /* transition: all .2s linear; */
+  text-indent: 5px;
+  /* text-align: center; */
+}
+.outer li{
+    position:relative;
+    display:inline-block;
+    margin-right:10px;
+}
+
+.outer li a, .inner li a{
+  text-decoration:none;
+}
+
+.inner{
+    position:absolute;
+    display:none;
+    width:65px;
+    padding:5px 20px;
+    background-color:#fffacd;
+    margin-top:0px;
+    border-radius:0px 5px 5px 5px;    
+}
+
+.inner li{
+    padding:5px 5px;
+}
+
+.inner li a{
+  font-size: 2em;
+}
+
+.inner li:hover a{
+  font-size: 2em;
+    color:rgb(253, 136, 136);
+    border-bottom:rgb(176, 245, 176) 4px solid;
+    border-radius:20px;
+    background-color:rgb(0, 0, 0);  
+}
+
+.outer li:hover .inner{
+    display:block;
+}
+
+/* body {
+    background-color:#393939;
+} */
+
+div.date{
+  float: right;
+  position: relative;
+  font-weight: bold;
+}
+
+#center{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+select .item{
+  width: 5px;
+  margin: 0 5px;
+}
+
+button{
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  color: #ffffff;
+  border-radius:5px 5px 5px 5px; 
+  background-color: crimson;
+  opacity: 0.4;
+}
+button.submit:hover{
+  color:black;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 20px;
+  vertical-align: middle;
+  margin-top: 8px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #A1A6AB;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+ height: 16px;
+width: 14px;
+left: 2px;
+bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #8b89f5;
+  content: "P";
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4498dd;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.table th, .table td { 
+     border-top: none !important;
+     border-left: none !important;
+ }
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #ffffff ;
+}
+
+.table-call {
+    min-height: .01%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: rgb(201, 42, 42);
+    color: white;
+}
+
+
+.table.table-bordered.vertical,
+.table.table-bordered.vertical td,
+.table.table-bordered.vertical th{
+  border-top: 0px solid white !important;
+  border-bottom: 0px solid white !important;
+  border-right: 0px solid white !important;
+  border-left: 0px solid white !important;
+    }
+
+/* .head {
+  font-weight: normal;
+  font-size: 16px;
+} */

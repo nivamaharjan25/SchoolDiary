@@ -1,0 +1,346 @@
+/* CSS Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+  font-size: 18px;
+}
+
+*{
+    margin: 0px;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none; border:none;
+    /* text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear; */
+    text-indent: 5px;
+    /* text-align: center; */
+}
+
+
+/* Navigation Bar  */
+#navbar1{
+    margin-bottom: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    width: inherit;
+    height: inherit;
+    font-size: 1em;
+    /* background: #fff; */
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    /* z-index: 1000; */
+}
+
+/* Logo and Image  */
+#logo{
+    margin: 0px 0px;
+    /* titleText: 2.5rem; */
+}
+#logo img{
+    height:  75px;
+    width: 70px;
+    margin: 18px 23px;
+    display: inline-block;
+}
+div.icons{
+    margin-left: 20rem;
+    display: inline-block;
+    cursor: pointer;
+    color: white;   
+    
+}
+div.icons:hover{
+    color: rgb(107, 0, 21);
+}
+.name-school{
+    display: block;
+    font-weight: bolder;
+    color: rgb(107, 0, 21);
+}
+
+li.item{
+  font-size: 50px;
+}
+
+#navbar1 ul{
+  
+    display: flex;
+}
+#navbar1::before{
+    content: " ";
+    background-color: crimson;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar1 ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar1 ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar1 ul li a:hover{
+    color: black;
+    background-color: aliceblue;
+}
+
+/* html section  */
+html {
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #474747;
+  }
+section{
+    padding: 5rem, 10%;
+}
+/* header section */
+/* header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 2rem 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
+  } */
+
+
+
+div.rowC{
+    /* flex-wrap: wrap; */
+    color: blueviolet;
+    display:flex; 
+    justify-content: space-around;
+    /* flex-direction:row; */
+    /* margin: 0 -5px; */
+    /* gap: 2px; */
+}
+
+
+
+/* home section  */
+.gallery{
+    text-align: center;
+    line-height: 1;
+    margin-top: 50px;
+    
+}
+.row{
+    width: 100%;
+    height: 400px;
+    position:relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    background-image: "img/bg.webp"; 
+    /* background-color: red; */
+    
+}
+.column img{
+    /* float: left; */
+    width: 100%;
+    /* padding: 5px; */
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px lightblue;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.row img{
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-shadow: 10;
+}
+
+
+.body-title {
+  text-align:center;
+  float:center;
+}
+p.intro{
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-bottom: 50px;
+  text-align:center;
+  float:center;
+}
+.title{
+  margin-top: 100px;
+  line-height:1em;
+  /* font-family:arial; */
+  text-align:center;
+  float:center;
+  -webkit-text-decoration-line: overline underline; /* Safari */
+   text-decoration-line: overline underline; 
+}
+
+.curriculum{
+  margin-left: 150px;
+  text-indent: 1em;
+  /* list-style-type: none; */
+}
+h3.name-curriculum{ 
+  /* background-color: red; */
+  /* border-width: 50px; */
+  display: block;
+  /* width: 50px; */
+  /* padding: 3px 22px; */
+  /* border-radius: 20px; */ 
+}
+.curriculum li:before { 
+  content: "-" ;
+  list-style-type: none;  
+  text-indent: 1em;
+}
+
+.curriculum ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /* display:inline; */
+  float: left;
+}
+img.image-curriculum{
+  margin-left: 350px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 200px;
+  /* float: right; */
+  display:inline;
+  box-shadow: 5px 5px 5px lightblue;
+}
+/* .title:before {
+    content: "";
+    background: url("icon.jpg") no-repeat;
+    border-bottom:2px solid #000;
+    width: 480px;
+    height: 20px;
+    float: left;
+    margin: -6px 50px 0 0;
+   }
+   
+   .title:after {
+    content: "";
+    background: url("icon.jpg") no-repeat;
+    border-bottom:2px solid #000;
+    width:100%;
+    height: 20px;
+    margin: -6px 0px 0 5px;
+    position:absolute;
+     
+   } */
+
+
+
+
+
+.footer {
+    background: #e5fcf6;
+    /* text-indent: 50px; */
+}
+  
+/* .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 100px;
+    margin-left: 20px;
+    text-indent: 50px;
+} */
+.footer .box-container .box h4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #444;
+    margin-left: 25px;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box h4 i {
+    margin-left: 25px;
+    color: palevioletred;
+  }
+  
+  .footer .box-container .box .share {
+    margin-top: 3rem;
+  } 
+  
+  /* .footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 0.3rem;
+    background-color: #0eb582;
+    color: #fff;
+    margin-right: .3rem;
+    text-align: center;
+  } */
+  
+  /* .footer .box-container .box .share a:hover {
+    background-color: #444;
+  } */
+  
+  .footer .box-container .box .link {
+    font-size: 1rem;
+    /* line-height: 10px; */
+    color: #777;
+    /* margin-top: -30px; */
+    /* margin-left: 750px; */
+    /* font-size: ; */
+    padding: 2px 0;
+    display: block;
+  }
+  
+  .footer .box-container .box .link:hover {
+    color: #0eb582;
+    text-decoration: underline;
+  }
+  
+  /* .footer .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #777;
+    padding: 1rem 0;
+  } */
+
+   
